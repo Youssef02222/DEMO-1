@@ -84,8 +84,11 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 22px 0;
-  background:#05253acc
-  /* #fff; */
+  background:#0e2f9ac4;
+  /* #fff; 
+  0E2E9A
+   background:#05253acc
+  */
 }
 
 #header.header-scrolled {
@@ -191,6 +194,9 @@ h6 {
   visibility: hidden;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  /*
+   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  */
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -479,7 +485,7 @@ section {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   position: relative;
   color: #222222;
 }
