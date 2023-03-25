@@ -1610,3 +1610,20 @@ section {
 #footer .footer-links a:hover {
   color: #3498db;
 }
+
+.seperator {
+  padding: 0;
+  border: 0px;
+  border-top: 1px solid #ccc;
+  color: #000;
+  text-align: center;
+}
+.seperator:after {
+  content: "vs";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.50em;
+  background: #fff;
+}
