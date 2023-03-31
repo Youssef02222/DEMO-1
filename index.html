@@ -36,46 +36,99 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .bottom-left {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+
+    .top-left {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+    }
+
+    .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .cont {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    #ap1:hover {
+      background: #7acef5;
+      color: #ffffff;
+    }
+
+    #updateLinks:hover {
+      background-color: #ffffff;
+      color: #1151db;
+
+      /* width: 100%;
+  display: inline-block;
+  width:100px; */
+
+    }
+
+    .updateLinks {
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      /* width: 100%;
+  display: inline-block;
+  width:100px; */
+
+    }
+
+    /* #updateLinks:focus{
+    background-color: #ffffff;
+    color:#1151db;
+   
+   width: 100%;
+  display: inline-block;
+  width:100px;
     
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
 }
+ */
+    #linkLi {
 
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
+      list-style: none;
+      text-align: center;
+      /* background-color: #ffffff; */
+    }
 
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
+    #linkLi a {
 
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
+      text-decoration: none;
+      text-align: center;
+      /* background-color: #ffffff; */
+    }
+    .CEOclass{
+    
+    background-image: url('./assets/img/back.png');
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-size: cover;
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.cont {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-#ap1:hover  {
-    background: #7acef5;
-    color: #ffffff;
-}
+    }
   </style>
 </head>
 
@@ -92,22 +145,35 @@
             class="img-fluid"></a>
       </div>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar navbar-expand-lg">
 
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#bene">Benefits</a></li>
-          <li><a class="nav-link scrollto" href="#QualityManagement">Quality Management</a></li>
-          <li><a class="nav-link scrollto " href="#about-3">Mission & Vission</a></li>
-          <li><a class="nav-link scrollto" href="#faq">Our Approach</a></li>
-          <li><a class="nav-link scrollto" href="#team">CEO</a></li>
-  
-          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#pricing">Contact us </a></li> -->
+          <li><a class="nav-link  scrollto mx-1 updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;"
+              class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link  scrollto mx-1" href="#about" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">About</a></li>
+          <li><a class="nav-link  scrollto  mx-1" href="#services" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Services</a></li>
+          <li><a class="nav-link  scrollto  mx-1" href="#bene" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Benefits</a></li>
+          <li><a class="nav-link  scrollto  mx-1" href="#QualityManagement" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Quality Management</a>
+          </li>
+          <li><a class="nav-link  scrollto  mx-1 " href="#about-3" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Mission & Vission</a></li>
+          <li><a class="nav-link  scrollto  mx-1" href="#faq" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Our Approach</a></li>
+          <li><a class="nav-link  scrollto  mx-1" href="#team" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">CEO</a></li>
+          <li><a class="nav-link  scrollto  mx-1" href="#contact" id="updateLinks"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Contact</a></li>
+        </ul>
 
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+        <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
+        <!-- <li><a class="nav-link scrollto" href="#pricing">Contact us </a></li> -->
+
+        <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -124,9 +190,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
-        </ul>
+        <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -152,7 +216,7 @@
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
       </div>
-     <!-- <div class="cont">
+      <!-- <div class="cont">
         <img src="./assets/img/compressed/5.jpg" alt="Snow" style="width:100%;">
         <div class="bottom-left">Bottom Left</div>
         <div class="top-left">Top Left</div>
@@ -410,85 +474,155 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <h4 class="title"><a href="">Accreditation (CAP, COLA, ISO, --).</a></h4>
+            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            <h4 class="title"><a href="">Apply all State licenses  (NY, NJ, CA, PA, ----).</a></h4>
+            <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <h4 class="title"><a href="">Monitor Quality control.</a></h4>
+            <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            <h4 class="title"><a href="">Quality Assurance program.</a></h4>
+            <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <h4 class="title"><a href="">Create Standard
+Operating Procedures</a></h4>
+            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            <h4 class="title"><a href="">Proficiency Testing
+              monitoring.</a></h4>
+            <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <h4 class="title"><a href="">Document Control ( Policies,
+              procedures, and test results.</a></h4>
+            <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            <h4 class="title"><a href="">Corrective and
+              Preventive action.</a></h4>
+            <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+
+
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4 class="title"><a href="">Risk
+              Management.&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</a></h4>
+            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a href="">Training and
+              Education.</a></h4>
+            <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4 class="title"><a href="">Customer
+              Service.&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</a></h4>
+            <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4 class="title"><a href="">Attend all external
+              inspections.</a></h4>
+            <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4 class="title"><a href="">Validate new tests with
+              advanced software.</a></h4>
+            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a href="">LIS
+              Verification.&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</a></h4>
+            <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4 class="title"><a href="">Key Performance
+              indictors.</a></h4>
+            <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 my-3">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4 class="title"><a href="">Follow up inspection
+              citations.</a></h4>
+            <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
+          </div>
+        </div>
+
 
       </div>
 
@@ -504,7 +638,8 @@
       </div>
       <div class="row">
         <div class="col-md-6 d-flex align-items-stretch">
-          <div class="card" style='background-image: url("assets/img/compressed/1.jpg");' data-aos="fade-up" data-aos-delay="100">
+          <div class="card" style='background-image: url("assets/img/compressed/1.jpg");' data-aos="fade-up"
+            data-aos-delay="100">
             <div class="card-body">
               <h5 class="card-title"><a href="">QUALITY PLANNING</a></h5>
               <p class="card-text">The process of identifying
@@ -516,7 +651,8 @@
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="card" style='background-image: url("assets/img/compressed/3.jpg");' data-aos="fade-up" data-aos-delay="200">
+          <div class="card" style='background-image: url("assets/img/compressed/3.jpg");' data-aos="fade-up"
+            data-aos-delay="200">
             <div class="card-body">
               <h5 class="card-title"><a href="">QUALITY IMPROVEMENT</a></h5>
               <p class="card-text">The purposeful change of
@@ -529,7 +665,8 @@
 
         </div>
         <div class="col-md-6 d-flex align-items-stretch mt-4">
-          <div class="card" style='background-image: url("assets/img/compressed/6.jpg");' data-aos="fade-up" data-aos-delay="100">
+          <div class="card" style='background-image: url("assets/img/compressed/6.jpg");' data-aos="fade-up"
+            data-aos-delay="100">
             <div class="card-body">
               <h5 class="card-title"><a href="">QUALITY CONTROL</a></h5>
               <p class="card-text">The continuing effort to
@@ -541,9 +678,10 @@
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-stretch mt-4">
-          <div class="card" style='background-image: url("assets/img/compressed/7.jpg");' data-aos="fade-up" data-aos-delay="200">
+          <div class="card" style='background-image: url("assets/img/compressed/7.jpg");' data-aos="fade-up"
+            data-aos-delay="200">
             <div class="card-body">
-              <h5 class="card-title"><a href="">QUALITY  ASSURANCE</a></h5>
+              <h5 class="card-title"><a href="">QUALITY ASSURANCE</a></h5>
               <p class="card-text">The systematic or planned actions
                 necessary to offer sufficient
                 reliability so that a particular service
@@ -902,19 +1040,19 @@
     </section> -->
   <!-- End Portfolio Section -->
 
-  <!-- ======= CEO Section must be uncommented line by line ======= --> 
+  <!-- ======= CEO Section must be uncommented line by line ======= -->
   <!-- <section id="team" class="team section-bg"> -->
-    <!-- <div class="container"> -->
+  <!-- <div class="container"> -->
 
-      <!-- <div class="section-title" data-aos="fade-up"> -->
-        <!-- <h2>CEO</h2> -->
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
-      <!-- </div> -->
+  <!-- <div class="section-title" data-aos="fade-up"> -->
+  <!-- <h2>CEO</h2> -->
+  <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
+  <!-- </div> -->
 
-      <!-- <div class="row">
+  <!-- <div class="row">
 
         <img src="./assets/img/compressed/32.png"> -->
-        <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+  <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
@@ -986,23 +1124,67 @@
             </div>
           </div> -->
 
-      <!-- </div>
+  <!-- </div>
 
     </div>
   </section> -->
-  
+  <!-- shadow shadow-offset-down-lg  shadow box -->
   <!-- End CEO Section -->
-<!-- new ceo section -->
-  <section id="team" class="about" >
-    <div class="container">
-      <div class="row d-flex justify-content-center shadow shadow-offset-down-lg">
-        <div class="col-6 my-5">
-          <h2 class="d-flex justify-content-center bg-opacity-50 bg-primary text-white"><i class="ri-file-user-line mx-2"></i> CEO</h2>
+  <!-- new ceo section -->
+  <section id="team" class="CEOclass">
+    <div class="container " >
+      <div class="row d-flex justify-content-center ">
+        <div class="d-flex justify-content-center my-1">
+          <div class="section-titleCEO" data-aos="fade-up">
+            <h2 class="text-white">CEO</h2>
+            <h3 class="d-flex justify-content-center "><strong>Heba Ibrahim</strong> </h3>
+            <div class="d-flex justify-content-center ">
+              <p>
+                Heba presides over a team of highly qualified,
+    
+                experienced and knowldgeable<br> Quality professionals that are passionate and dedicated to our clients.
+              </p>
+          </div>
+          <div class="d-flex  justify-content-center row my-4 ">
+            <!-- <ul class="col-4"> -->
+              <ul style="list-style: none;">
+                 <li class="my-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i> MQM / MBA  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; <i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i> IRCA Certified ISO 9001:2015 Lead Auditor    &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i>   IRCA Certified ISO : 14001 : 2015 lead     </li>
+                 <li class="my-3"> &nbsp; &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i> ISO: 15189 certified Auditor  &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i> Bachelor degree in science  &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i>  Postgraduate diploma in biochemistry </li>
+                 <li class="my-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i> Postgraduate diploma in physics  &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;"></i>12 years' experience in QMS,ISO15189 ,ISO 9001, CAP, COLA, NY, NJ, CLIA</li>
+            </ul>
+  
+            <!-- <ul class="col-4">
+              <li class="my-3"><i class="ri-check-double-line"></i>Postgraduate diploma in physics</li>
+              <li><i class="ri-check-double-line"></i> IRCA Certified ISO 9001:2015 Lead Auditor</li>
+              <li class="my-3"> <i class="ri-check-double-line"></i> 12 years' experience in QMS , ISO 15189, ISO 9001, CAP, COLA, NY,
+                NJ, CLIA </li>
+            </ul> -->
+  
+            <!-- <ul class="col-4">
+              <li class="my-3"><i class="ri-check-double-line"></i>ISO: 15189 certified Auditor </li>
+              <li class="my-3"><i class="ri-check-double-line"></i> Bachelor degree in science </li>
+              <li class="my-3"><i class="ri-check-double-line"></i> Postgraduate diploma in biochemistry </li>
+            </ul> -->
+  
+          </div>
+        </div>
+        <!-- <h3 class="d-flex justify-content-center "><strong>Heba Ibrahim</strong> </h3> -->
+        <!-- <div class="d-flex justify-content-center ">
+          <p>
+            Heba presides over a team of highly qualified,
+
+            experienced and knowldgeable<br> Quality professionals that are passionate and dedicated to our clients.
+          </p> -->
+        </div>
+   
+        <!-- <div class="col-6 my-5">
+          <h2 class="d-flex justify-content-center bg-opacity-50 bg-primary text-white"><i
+              class="ri-file-user-line mx-2"></i> CEO</h2>
           <h3 class="d-flex justify-content-center bg-opacity-75 bg-primary my-4 text-white">Heba Ibrahim</h3>
           <p class=" ">
             Heba presides over a team of highly qualified,
             <br>
-             experienced and knowldgeable Quality professionals <br>that are passionate and dedicated to our clients.
+            experienced and knowldgeable Quality professionals <br>that are passionate and dedicated to our clients.
           </p>
         </div>
 
@@ -1015,9 +1197,10 @@
             <li><i class="ri-check-double-line"></i> Bachelor degree in science </li>
             <li><i class="ri-check-double-line"></i> Postgraduate diploma in biochemistry </li>
             <li><i class="ri-check-double-line"></i> Postgraduate diploma in physics </li>
-            <li><i class="ri-check-double-line"></i> 12 years' experience in QMS , ISO 15189, ISO 9001, CAP, COLA, NY, NJ, CLIA </li>
+            <li><i class="ri-check-double-line"></i> 12 years' experience in QMS , ISO 15189, ISO 9001, CAP, COLA, NY,
+              NJ, CLIA </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -1103,7 +1286,7 @@
           <h4>Non consectetur a erat nam at lectus urna duis?</h4>
         </div>
         <div class="col-lg-7 ">
-          <p >
+          <p>
             Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
             Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
           </p>
@@ -1152,14 +1335,15 @@
         </div>
       </div><!-- End F.A.Q Item-->
 
-   
+
     </div><!-- End F.A.Q Item-->
 
     </div>
   </section><!-- End F.A.Q Section -->
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact" style="background-color: ghostwhite;">
+  <!-- style="background-color: ghostwhite;" -->
+  <section id="contact" class="contact" >
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
@@ -1168,66 +1352,66 @@
 
       <div class="row">
 
-        <div class="col-lg-8 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="contact-about">
-            <h3>www.manhattanqualitysolutions.com</h3>
-        
-            <p><strong style="font-size: large;color: #0674ce;"><i class="ri-global-line"></i></strong> The process of identifying
-              the quality standards relevant to
-              the project and
-              deciding how to meet them.</p>        
-           <div class="social-links">
+            <img src="./assets/img/Logo - Header.png" class="my-5"style="height: 50px;width: 150px;">
+            
+            <!-- style="background-color: ghostwhite;" -->
+            <p class="my-4">Our company can improve the<br> work in your laboratory at all<br> levels including employees and<br> technical work.</p>
+            <div class="social-links">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
-            <div class="info">
-            <div>
-              <i class="ri-phone-line"></i>
-              <p><strong>TEL : </strong>(973) 777-1215</p>
-            </div>
-            <div>
-              <i class="ri-cellphone-line"></i>
-
-              <p><strong>CELL : </strong>(267) 761-7602</p>
-            </div>
-            <div>
-             
-             <!-- <img src="./assets/img/compressed/fax.png"  style="height:35px;width: 35px;"> -->
-            
-             <i class="ri-unsplash-line"></i>
-              <p><strong>FAX : </strong>(973) 777-1243</p>
-              
-            </div>
-          </div>
+         
           </div>
         </div>
 
 
 
-        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="info">
             <div class="row">
-              <a href="https://www.google.com/maps/dir//1135+Clifton+Ave+%231+Clifton,+NJ+07013+USA/@40.8596372,-74.1670659,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c2ff01db7d9643:0xa0e1813b46316ddb!2m2!1d-74.1670659!2d40.8596372">
-                <i class="ri-map-pin-line" ></i>
-                <p >1135 Clifton Ave suite 1,<br>Clifton , NJ 07013</p>
-              </a>
+              <h3 class="my-5">&nbsp;&nbsp;&nbsp;Contact us</h3>
 
               <div>
                 <i class="ri-mail-send-line"></i>
-                <p>hibrahim@mqualitysolutions.com</p>
-                <i class="ri-mail-send-line"></i>
-                <p>hr@mqualitysolutions.com</p>
+                <p>hibrahim@mqualitysolutions.com <br> hr@mqualitysolutions.com</p>
+                <!-- <i class="ri-mail-send-line"></i> -->
+              
               </div>
 
-         
+              <div class="info">
+                <div>
+                  <i class="ri-phone-line"></i>
+                  <p><strong>TEL : </strong>(973) 777-1215 <br><strong>CELL : </strong>(267) 761-7602<br><strong>FAX : </strong>(973) 777-1243</p>
+                </div>
+               
+                <!-- <div>
+                  <i class="ri-cellphone-line"></i>
+  
+                  <p><strong>CELL : </strong>(267) 761-7602</p>
+                </div>
+                <div>
+                  <img src="./assets/img/compressed/fax.png"  style="height:35px;width: 35px;">
+                  <i class="ri-unsplash-line"></i>
+                  <p><strong>FAX : </strong>(973) 777-1243</p>
+  
+                </div> -->
+              </div>
+              <a
+                href="https://www.google.com/maps/dir//1135+Clifton+Ave+%231+Clifton,+NJ+07013+USA/@40.8596372,-74.1670659,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c2ff01db7d9643:0xa0e1813b46316ddb!2m2!1d-74.1670659!2d40.8596372">
+                <i class="ri-map-pin-line"></i>
+                <p>1135 Clifton Ave suite 1,<br>Clifton , NJ 07013</p>
+              </a>
+
             </div>
-            
           </div>
         </div>
 
-        <!-- <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="my-5">&nbsp;&nbsp; Send Message</h3>
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1248,7 +1432,19 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div> -->
+          </div>
+
+          <div class="col-lg-3 col-md-12"data-aos="fade-up" data-aos-delay="300">
+            <h3 class="my-5 mx-4">&nbsp;&nbsp;Quick Links</h3>
+            <ul class="mx-4" style="list-style: none;">
+              <li class="my-1"><i class="ri-arrow-right-s-fill"style="color:#0674ce;font-size:17px"></i><a>About us </a></li>
+              <li class="my-1"><i class="ri-arrow-right-s-fill"style="color:#0674ce;font-size:17px;"></i><a>Services</a></li>
+              <li class="my-1"><i class="ri-arrow-right-s-fill"style="color:#0674ce;font-size:17px;"></i><a>Benefits</a></li>
+              <li class="my-1"><i class="ri-arrow-right-s-fill"style="color:#0674ce;font-size:17px;"></i><a>Mission</a></li>
+              <li class="my-1"><i class="ri-arrow-right-s-fill"style="color:#0674ce;font-size:17px;"></i>CEO</a></li>
+              <li class="my-1"><i class="ri-arrow-right-s-fill"style="color:#0674ce;font-size:17px;"></i><a>Our Approach</a></li>
+            </ul>
+          </div>
 
       </div>
 

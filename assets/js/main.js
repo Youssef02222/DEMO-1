@@ -52,9 +52,9 @@
       let section = select(navbarlink.hash)
       if (!section) return
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
+        navbarlink.classList.add('updateLinks','active')
       } else {
-        navbarlink.classList.remove('active')
+        navbarlink.classList.remove('updateLinks','active')
       }
     })
   }
