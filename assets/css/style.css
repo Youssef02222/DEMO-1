@@ -736,7 +736,7 @@ section {
     box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
     transition: all 0.3s ease-in-out;
     border:0.5px solid rgba(0, 0, 0, 0.192);
-    border-radius: 8px;
+    border-radius: 18px;
     z-index: 1;
     text-align: center;
 
@@ -788,7 +788,8 @@ section {
 .services .title {
     font-weight: 700;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .services .title a {
