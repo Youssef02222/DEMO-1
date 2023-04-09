@@ -5,13 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Vesperr Bootstrap Template - Index</title>
+  <title>Manhattan Quality Solutions</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Favicon-03.png" rel="icon">
+  <link href="assets/img/Favicon-03.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
@@ -27,14 +30,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mdb.min.css" />
 
-  <!-- =======================================================
-  * Template Name: Vesperr
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/nivo-slider.css" rel="stylesheet">
+  <link href="assets/css/nivo-slider-theme.css" rel="stylesheet">
+
   <style>
     .bottom-left {
       position: absolute;
@@ -79,16 +79,21 @@
     }
 
     #updateLinks:hover {
-      background-color: #ffffff;
-      color: #1151db;
+      background-color: #0c9cd4;
+      color: #ecedee;
       /* width: 100%;
   display: inline-block;
   width:100px; */
     }
+    /* #updateLinks:focus {
+      background-color: #0c9cd4;
+      color: #ecedee;
+      
+    } */
 
     .updateLinks {
-      background-color: #ffffff;
-      color: #000000;
+      background-color: #0c9cd4;
+      color: #ffffff;
       text-decoration: none;
       /* width: 100%;
   display: inline-block;
@@ -122,8 +127,11 @@
       background-image: url('./assets/img/back.png');
       background-repeat: no-repeat;
       color: #FFFFFF;
+      background-position: center;
       background-size: cover;
+      
     }
+
   </style>
 </head>
 
@@ -136,52 +144,56 @@
       <div class="logo">
         <!-- <h1><a href="index.html">DEMO</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/logo-1.png" style="height: 68px; width: 165;" alt="not found"
+        <!-- style="height: 68px; width: 140px;" -->
+        <a href="index.html"><img src="assets/img/Header.png"  alt="not found"
             class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar navbar-expand-lg">
 
         <ul>
-          <li><a class="nav-link  scrollto mx-1 updateLinks"
-              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;"
-              class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link  scrollto mx-1"
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;"
+              class="nav-link scrollto active" href="#home_1" id="updateLinks"> HOME</a></li>
           <li><a class="nav-link  scrollto mx-1" href="#about" id="updateLinks"
-              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">About</a></li>
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">ABOUT</a></li>
               <li><a class="nav-link  scrollto  mx-1" href="#QualityManagement" id="updateLinks"
-                style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Quality Management</a></li>
-          <li><a class="nav-link  scrollto  mx-1" href="#services" id="updateLinks"
-              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Services</a></li>
-
-              <li><a class="nav-link  scrollto  mx-1 " href="#Mission$Vission" id="updateLinks"
-                style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Mission & Vission</a></li>
+                style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">QUALITY MANAGEMENT</a></li>
+          <li><a class="nav-link  scrollto  mx-1" href="#services" id="updateLinks" style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">SERVICES</a></li>
+          <li><a class="nav-link  scrollto  mx-1" 
+            href="#Mission" id="updateLinks" 
+            style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">
+            MISSION & VISION</a></li>
                 <li><a class="nav-link  scrollto  mx-1" href="#faq" id="updateLinks"
-                  style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Our Approach</a></li>
+                  style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">OUR APPROACH</a></li>
           <li><a class="nav-link  scrollto  mx-1" href="#bene" id="updateLinks"
-              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Benefits</a></li>
-
-
-
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">BENEFITS</a></li>
           <li><a class="nav-link  scrollto  mx-1" href="#team" id="updateLinks"
-              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">CEO</a></li>
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">CEO</a></li>
           <li><a class="nav-link  scrollto  mx-1" href="#contact" id="updateLinks"
-              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;">Contact</a></li>
+              style="display: block; text-align: center;  padding: 10px; border-radius: 5px;font-family:'Roboto Condensed', 'Arial', Helvetica, sans-serif;">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
 
+
+
     </div>
-
-
 
   </header>
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="home_1" class="d-flex align-items-center">
+<!-- class="d-flex align-items-center" -->
 
-    <div class="container">
+
+
+
+
+    <!-- old view -->
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Manhattan Quality Solutions</h1>
@@ -196,7 +208,170 @@
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
       </div>
+    </div> -->
+
+
+
+
+
+
+<!-- new view without animation -->
+  <!-- Carousel wrapper -->
+<!-- <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+ 
+  <div class="carousel-indicators">
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div>
+
+
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <div class="position-relative">
+      <img src="assets/img/compressed/5.jpg" class="d-block w-100 myimage" alt="Sunset Over the City" />
+      <div class="overlay position-absolute"></div>
     </div>
+        
+      <div class="carousel-caption">
+        <h1 >First slide label</h1>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+
+    
+    <div class="carousel-item">
+      <div class="position-relative">
+      <img  src="assets/img/compressed/3.jpg" class="d-block w-100 myimage"alt="Canyon at Nigh" />
+      <div class="overlay position-absolute"></div>
+    </div>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>We're In The Business Of Get Quality Business Service</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+      </div>
+    </div>
+
+  
+    <div class="carousel-item">
+      <div class="position-relative">
+      <img src="assets/img/compressed/1.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+      <div class="overlay position-absolute"></div>
+    </div>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>We're In The Business Of Helping You Start Your Business</h1>
+        <h3>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
+    data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
+    data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+<!-- Carousel wrapper -->
+
+
+
+
+
+
+
+<div id="home5" class="slider-area">
+  <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides h-75">
+          <img src="assets/img/compressed/5.jpg"  alt="" title="#slider-direction-1" />
+          <img src="assets/img/compressed/3.jpg"  alt="" title="#slider-direction-2" />
+          <img src="assets/img/compressed/1.jpg"  alt="" title="#slider-direction-3" />
+      </div>
+
+      
+      <div id="slider-direction-1" class="slider-direction slider-one">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="slider-content">
+                         
+                          <div class="layer-1-1 hidden-xs slideInDown" >
+                              <h2 class="title1">The Best Business Information </h2>
+                          </div>
+                         
+                          <div class="layer-1-2 slideInUp" >
+                              <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
+                          </div>
+                       
+                          <div class="layer-1-3 hidden-xs  slideInUp" >
+                              <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                              <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div id="slider-direction-2" class="slider-direction slider-one">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="slider-content text-center">
+                        
+                          <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                              <h2 class="title1">The Best Business Information </h2>
+                          </div>
+                        
+                          <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                              <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
+                          </div>
+                         
+                          <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                              <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                              <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      
+      <div id="slider-direction-3" class="slider-direction slider-one">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="slider-content">
+                         
+                          <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                              <h2 class="title1">The Best business Information </h2>
+                          </div> 
+                          <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                              <h1 class="title2">Helping Business Security & Peace of Mind for Your Family</h1>
+                          </div>
+                         
+                          <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                              <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                              <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 
   </section>
@@ -210,6 +385,22 @@
       </div>
 
       <div class="row content">
+
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <ul>
+            <li style="font-size: larger;"> <strong>Manhattan Quality Solutions </strong>is founded in 2018 to meet the rising demand of highly
+              specialized quality services in laboratories in order to assure accurate and reliable results.</li>
+<li><br></li>
+            <li style="font-size: larger;">
+              A quality assurance system is meant to increase customer confidence and laboratory's credibility, while
+              also improving work processes and efficiency, and it enables an organization to better compete with
+              others.
+            </li>
+
+          </ul>
+          <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+        </div>
+
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
           <!-- <p class="">
             At Manhattan Quality Solutions, we understand
@@ -218,12 +409,19 @@
             quality consulting services, tailored to meet the
             unique needs of each of our clients. </p> -->
           <ul>
-            <li><i class="ri-check-double-line"></i> The process of identifying the quality standards relevant to the
-              project and deciding how to meet them.</li>
-            <li><i class="ri-check-double-line"></i> The purposeful change of a process to improve the confidence or
-              reliability of the outcome.</li>
-            <li><i class="ri-check-double-line"></i> The continuing effort to uphold a process’s integrity and
-              reliability in achieving an outcome.</li>
+            <li ><i class="ri-check-double-line"></i> <strong>Manhattan Quality Solutions </strong>is a premium quality
+consulting agency which is dedicated to helping
+Laboratories achieve their full potential.</li>
+            <li><i class="ri-check-double-line"></i> Our team of experts is qualified with specialized
+              expertise and complementary skills that empower
+              them to collaborate, innovate, and produce work
+              at the highest levels of quality and help you drive
+              improvement in all areas of your business.</li>
+            <li><i class="ri-check-double-line"></i>At Manhattan Quality Solutions, we understand
+              that quality is the foundation of success for any
+              organization. That's why we offer a wide range of
+              quality consulting services, tailored to meet the
+              unique needs of each of our clients.</li>
             <!-- <li><i class="ri-check-double-line"></i>
               The systematic or planned actions
               necessary to offer sufficient
@@ -233,20 +431,8 @@
             </li> -->
           </ul>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-          <ul>
-            <li> <strong>Manhattan Quality Solutions </strong>is founded in 2018 to meet the rising demand of highly
-              specialized quality services in laboratories in order to assure accurate and reliable results.</li>
 
-            <li>
-              A quality assurance system is meant to increase customer confidence and laboratory's credibility, while
-              also improving work processes and efficiency, and it enables an organization to better compete with
-              others.
-            </li>
 
-          </ul>
-          <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
-        </div>
       </div>
 
     </div>
@@ -269,7 +455,7 @@
               <h5 class="card-title"><a href="">QUALITY PLANNING</a></h5>
               <p class="card-text">The process of identifying the quality standards relevant to the project and deciding
                 how to meet them.</p>
-              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
         </div>
@@ -281,7 +467,7 @@
               <p class="card-text">The purposeful change of a process to improve the confidence or reliability of the
                 outcome.
               </p>
-              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
 
@@ -294,7 +480,7 @@
               <p class="card-text">The continuing effort to uphold a process’s integrity and reliability in achieving an
                 outcome.
               </p>
-              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
         </div>
@@ -305,7 +491,7 @@
               <h5 class="card-title"><a href="">QUALITY ASSURANCE</a></h5>
               <p class="card-text">The systematic or planned actions necessary to offer sufficient reliability so that a
                 particular service or product will meet the specified requirements.</p>
-              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
             </div>
           </div>
         </div>
@@ -331,7 +517,7 @@
                 style="height: 40px;" /></div>
             <h5 class="title"><br><a href="">Accreditation (CAP, COLA, ISO, --).</a></h5>
             <br>
-            <p style="margin-top: -10px;">01</p>
+            <!-- <p style="position: absolute;top:180px;left: 10px;">01</p> -->
             <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
           </div>
         </div>
@@ -342,7 +528,7 @@
                 style="height: 40px;" /></div>
             <h4 class="title"><br><a href="">Apply all State licenses (NY, NJ, CA, PA, ----).</a></h4>
             <br>
-            <p style="margin-top: -10px;">02</p>
+            <!-- <p class="py-0">02</p> -->
             <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
           </div>
         </div>
@@ -355,7 +541,7 @@
               <h4 class="title"><br><a href="">Monitor Quality control.</a></h4>
             </div>
             <br>
-            <p style="margin-top:7px;">03</p>
+            <!-- <p class="py-3">03</p> -->
             <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
           </div>
         </div>
@@ -366,7 +552,7 @@
                 style="height: 40px;" /></div>
             <h4 class="title"><br><a href="">Quality Assurance program.</a></h4>
             <br>
-            <p style="margin-top: 7px;">04</p>
+            <!-- <p class="py-3">04</p> -->
             <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
           </div>
         </div>
@@ -380,7 +566,7 @@
             <h4 class="title"><br><a href="">Create Standard
                 Operating Procedures</a></h4>
                 <br>
-                <p style="margin-top: -10px;">05</p>
+                <!-- <p class="py-1">05</p> -->
             <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
           </div>
         </div>
@@ -392,7 +578,7 @@
             <h4 class="title"><br><a href="">Proficiency Testing
                 monitoring.</a></h4>
                 <br>
-                <p style="margin-top: -10px;">06</p>
+                <!-- <p class="py-3">06</p> -->
             <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
           </div>
         </div>
@@ -404,7 +590,7 @@
             <h4 class="title"><br><a href="">Document Control ( Policies,
                 procedures, and test results).</a></h4>
                 <br>
-                <p style="margin-top: -10px;">07</p>
+                <!-- <p class="py-0">07</p> -->
             <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
           </div>
         </div>
@@ -416,7 +602,7 @@
             <h4 class="title"><br><a href="">Corrective and
                 Preventive action.</a></h4>
                 <br>
-                <p style="margin-top: -10px;">08</p>
+                <!-- <p class="py-3">08</p> -->
             <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
           </div>
         </div>
@@ -431,7 +617,7 @@
             <h4 class="title"><br><a href="">Risk
                 Management.</a></h4>
                 <br>
-                <p style="margin-top: 7px;">09</p>
+                <!-- <p class="py-3">09</p> -->
             <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
           </div>
         </div>
@@ -443,7 +629,7 @@
             <h4 class="title"><br><a href="">Training and
                 Education.</a></h4>
                 <br>
-                <p style="margin-top: 7px;">10</p>
+                <!-- <p class="py-3">10</p> -->
             <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
           </div>
         </div>
@@ -455,7 +641,7 @@
             <h4 class="title"><br><a href="">Customer
                 Service.</a></h4>
                 <br>
-                <p style="margin-top: 7px;">11</p>
+                <!-- <p class="py-3">11</p> -->
             <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
           </div>
         </div>
@@ -467,7 +653,7 @@
             <h4 class="title"><br><a href="">Attend all external
                 inspections.</a></h4>
                 <br>
-                <p style="margin-top: -10px;">12</p>
+                <!-- <p class="py-3">12</p> -->
             <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
           </div>
         </div>
@@ -481,7 +667,7 @@
             <h4 class="title"><br><a href="">Validate new tests with
                 advanced software.</a></h4>
                 <br>
-                <p style="margin-top: -10px;">13</p>
+                <!-- <p class="py-1">13</p> -->
             <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
           </div>
         </div>
@@ -493,7 +679,7 @@
             <h4 class="title"><br><a href="">LIS
                 Verification.</a></h4>
                 <br>
-                <p style="margin-top: 7px;">14</p>
+                <!-- <p class="py-3">14</p> -->
             <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
           </div>
         </div>
@@ -505,7 +691,7 @@
             <h4 class="title"><br><a href="">Key Performance
                 indictors.</a></h4>
                 <br>
-                <p style="margin-top: 7px;">15</p>
+                <!-- <p class="py-3">15</p> -->
             <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
           </div>
         </div>
@@ -517,7 +703,7 @@
             <h4 class="title"><br><a href="">Follow up inspection
                 citations.</a></h4>
                 <br>
-                <p style="margin-top: -10px;">16</p>
+                <!-- <p class="py-3">16</p> -->
             <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
           </div>
         </div>
@@ -528,7 +714,7 @@
     </div>
   </section>
 
-  <section id="Mission$Vission" class="about">
+  <section id="Mission" class="about">
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
@@ -552,7 +738,7 @@
               <div class="row w-auto">
 
                 <p>
-                  <i class="fa fa-line-chart" style="font-size:24px"></i> <span style="font-weight: bold;"> mission of
+                  <i class="fa fa-line-chart" style="font-size:24px"></i> <span style="font-weight: bold;"> The mission of
                     MQS</span> at medical laboratories is to ensure that laboratory results are accurate, reliable, and
                   meet the required quality standards and guidelines. This includes implementing and maintaining a
                   quality management system, implementing
@@ -1245,10 +1431,10 @@ results are accurate, reliable, and consistent with the highest quality standard
   <!-- new ceo section -->
   <section id="team" class="CEOclass">
     <div class="container ">
-      <div class="row d-flex justify-content-center ">
-        <div class="d-flex justify-content-center my-1">
+      <div class="row   ">
+        <div class="  my-1">
           <div class="section-titleCEO" data-aos="fade-up">
-            <h2 class="text-white">CEO</h2>
+            <h2 class="text-white" style="text-align: center;">CEO</h2>
             <h3 class="d-flex justify-content-center "><strong>Heba Ibrahim</strong> </h3>
             <div class="d-flex justify-content-center ">
               <p>
@@ -1256,44 +1442,43 @@ results are accurate, reliable, and consistent with the highest quality standard
                 that are passionate and dedicated to our clients.
               </p>
             </div>
-            <div class="d-flex  justify-content-center row my-4 ">
+            <div class="d-flex row my-4 ">
               <!-- <ul class="col-4"> -->
-              <ul style="list-style: none;">
-                <li class="my-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="ri-checkbox-circle-line"
-                    style="color:#0674ce;font-size:x-large;position: relative;top: 4px;"></i> MQM / MBA &nbsp; &nbsp;
-                  &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line "
-                    style="color:#0674ce;font-size:x-large;position: relative;top: 5px;"></i> IRCA Certified ISO
-                  9001:2015 Lead Auditor &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line "
-                    style="color:#0674ce;font-size:x-large;position: relative;top: 5px;"></i> IRCA Certified ISO : 14001
-                  : 2015 lead </li>
+              <!-- <ul style="list-style: none;" >
+                <li class="my-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="ri-checkbox-circle-line"  style="color:#099fe3;font-size:x-large;position: relative;top: 4px;"></i> MQM / MBA &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> IRCA Certified ISO  9001:2015 Lead Auditor &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> IRCA Certified ISO : 14001 : 2015 lead </li>
                 <li class="my-3"> &nbsp; &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line "
-                    style="color:#0674ce;font-size:x-large;position: relative;top: 5px;"></i> ISO: 15189 certified Auditor &nbsp; &nbsp; &nbsp; <i
-                    class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;position: relative;top: 4px;"></i> Bachelor degree in
-                  science &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line "
-                    style="color:#0674ce;font-size:x-large;position: relative;top: 5px;"></i> Postgraduate diploma in biochemistry </li>
+                    style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> ISO: 15189 certified Auditor &nbsp; &nbsp; &nbsp; <i
+                    class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 4px;"></i> Bachelor degree in science &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> Postgraduate diploma in biochemistry </li>
                 <li class="my-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i
-                    class="ri-checkbox-circle-line " style="color:#0674ce;font-size:x-large;position: relative;top: 5px;"></i> Postgraduate diploma
-                  in physics &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line "
-                    style="color:#0674ce;font-size:x-large;position: relative;top: 5px;"></i>12 years' experience in QMS,ISO15189 ,ISO 9001, CAP,
-                  COLA, NY, NJ, CLIA</li>
+                    class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> Postgraduate diploma in physics &nbsp; &nbsp; &nbsp; <i class="ri-checkbox-circle-line "
+                    style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i>12 years' experience in QMS,ISO15189 ,ISO 9001, CAP, COLA, NY, NJ, CLIA</li>
+              </ul> -->
+
+              <ul class="col-lg-4 col-sm-12 d-block"style="list-style: none;">
+                <li><i class="ri-checkbox-circle-line"  style="color:#099fe3;font-size:x-large;position: relative;top: 4px;"></i> MQM / MBA </li>
+                <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> IRCA Certified ISO  9001:2015 Lead Auditor</li>
+                <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> IRCA Certified ISO  14001:2015 Lead Auditor </li>
+             
               </ul>
-              <!-- <div class="row d-flex ">
-                              
-                              <p><i class="ri-checkbox-blank-circle-fill" style="color:#0674ce;font-size:x-large;display: inline-block;margin-right: 50px;"></i>new text</p>
-                            </div> -->
+              
 
-              <!-- <ul class="col-4">
-              <li class="my-3"><i class="ri-check-double-line"></i>Postgraduate diploma in physics</li>
-              <li><i class="ri-check-double-line"></i> IRCA Certified ISO 9001:2015 Lead Auditor</li>
-              <li class="my-3"> <i class="ri-check-double-line"></i> 12 years' experience in QMS , ISO 15189, ISO 9001, CAP, COLA, NY,
-                NJ, CLIA </li>
-            </ul> -->
+              <ul class="col-lg-4 col-sm-12"style="list-style: none;">
+                <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> ISO: 15189 certified Auditor</li>
+                <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> Bachelor degree in science</li>
+                <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> Postgraduate diploma in biochemistry</li>
+             
+              </ul>
 
-              <!-- <ul class="col-4">
-              <li class="my-3"><i class="ri-check-double-line"></i>ISO: 15189 certified Auditor </li>
-              <li class="my-3"><i class="ri-check-double-line"></i> Bachelor degree in science </li>
-              <li class="my-3"><i class="ri-check-double-line"></i> Postgraduate diploma in biochemistry </li>
-            </ul> -->
+
+              
+              <ul class="col-lg-4 col-sm-12"style="list-style: none;">
+                <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> Postgraduate diploma in physics</li>
+                <!-- <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> IRCA Certified ISO  9001:2015 Lead Auditor</li> -->
+                <li><i class="ri-checkbox-circle-line " style="color:#099fe3;font-size:x-large;position: relative;top: 5px;"></i> 12 years' experience in QMS,ISO15189 ,ISO 9001, CAP, COLA, NY, NJ, CLIA</li>
+             
+              </ul>
+        
 
             </div>
           </div>
@@ -1418,14 +1603,14 @@ results are accurate, reliable, and consistent with the highest quality standard
 
         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="contact-about">
-            <img src="./assets/img/Logo - Header.png" class="my-4" style="height: 50px;width: 150px;">
+            <img src="./assets/img/Footer.png" class="my-4" style="height: 80px;width: 190px;">
 
             <!-- style="background-color: ghostwhite;" -->
-            <p class="my-4" >Our company can improve the<br> work in your laboratory at all<br> levels including
+            <p class="my-" >Our company can improve the<br> work in your laboratory at all<br> levels including
               employees and<br> technical work.</p>
             <div class="social-links">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="facebook"><i class="ri-facebook-fill"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
@@ -1438,10 +1623,10 @@ results are accurate, reliable, and consistent with the highest quality standard
         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="info">
             <div class="row">
-              <h3 class="my-5">&nbsp;&nbsp;&nbsp;Contact us</h3>
+              <h3 class="my-5">&nbsp;&nbsp;&nbsp;Info</h3>
 
               <div>
-                <i class="ri-mail-send-line"></i>
+                <i class="ri-mail-fill"></i>
                 <p>hibrahim@mqualitysolutions.com <br> hr@mqualitysolutions.com</p>
                 <!-- <i class="ri-mail-send-line"></i> -->
 
@@ -1449,9 +1634,10 @@ results are accurate, reliable, and consistent with the highest quality standard
 
               <div class="info">
                 <div>
-                  <i class="ri-phone-line"></i>
+                  <i class="ri-phone-fill"></i>
                   <p><strong>TEL : </strong>(973) 777-1215 <br><strong>CELL : </strong>(267) 761-7602<br><strong>FAX :
-                    </strong>(973) 777-1243</p>
+                    </strong>(973) 777-1243<br>  Working Hours: 8:00AM - 5:00PM</p>
+                 
                 </div>
 
                 <!-- <div>
@@ -1468,7 +1654,7 @@ results are accurate, reliable, and consistent with the highest quality standard
               </div>
               <a
                 href="https://www.google.com/maps/dir//1135+Clifton+Ave+%231+Clifton,+NJ+07013+USA/@40.8596372,-74.1670659,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c2ff01db7d9643:0xa0e1813b46316ddb!2m2!1d-74.1670659!2d40.8596372">
-                <i class="ri-map-pin-line"></i>
+                <i class="ri-map-pin-fill"></i>
                 <p>1135 Clifton Ave suite 1,<br>Clifton , NJ 07013</p>
               </a>
 
@@ -1528,19 +1714,19 @@ results are accurate, reliable, and consistent with the highest quality standard
   <!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- <footer id="footer">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 text-lg-left text-center">
           <div class="copyright">
-            &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
+            &copy; Copyright <strong>DEMO</strong>. All Rights Reserved
           </div>
-          <div class="credits">
+          <div class="credits"> -->
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/DEMO-free-bootstrap-template/ -->
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -1553,7 +1739,7 @@ results are accurate, reliable, and consistent with the highest quality standard
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -1570,7 +1756,12 @@ results are accurate, reliable, and consistent with the highest quality standard
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
 
+  <script src="assets/js/old/jquery.min.js"></script>
+  <script src="assets/js/old/wow.min.js"></script>
+  <script src="assets/js/old/jquery.nivo.slider.js"></script>
+  <script src="assets/js/old/main.js"></script>
 </body>
 
 </html>
