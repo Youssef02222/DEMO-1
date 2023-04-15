@@ -31,6 +31,7 @@
         var kids = slider.children();
         kids.each(function() {
             var child = $(this);
+            console.log(child);
             var link = '';
             if(!child.is('img')){
                 if(child.is('a')){
@@ -81,8 +82,9 @@
         // Detect Window Resize
         $(window).resize(function() {
             slider.children('img').width(slider.width());
+            slider.children('img').height('100%');
             sliderImg.attr('src', vars.currentImage.attr('src'));
-            sliderImg.stop().height('auto');
+            sliderImg.stop().height('800px');
             $('.nivo-slice').remove();
             $('.nivo-box').remove();
         });
@@ -215,8 +217,8 @@
         var createSlices = function(slider, settings, vars) {
         	if($(vars.currentImage).parent().is('a')) $(vars.currentImage).parent().css('display','block');
             $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').width(slider.width()).css('visibility', 'hidden').show();
-            var sliceHeight = ($('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').parent().is('a')) ? $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').parent().height() : $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').height();
-
+            var sliceHeight = ($('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').parent().is('a')) ? $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').height() : $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').height();
+            sliceHeight='800px';
             for(var i = 0; i < settings.slices; i++){
                 var sliceWidth = Math.round(slider.width()/settings.slices);
                 
@@ -643,8 +645,8 @@
         slices: 15,
         boxCols: 8,
         boxRows: 4,
-        animSpeed: 500,
-        pauseTime: 3000,
+        animSpeed: 200,
+        pauseTime: 9000,
         startSlide: 0,
         directionNav: true,
         controlNav: true,
@@ -1241,12 +1243,12 @@
                                 }
                                 if(i === totalBoxes-1){
                                     setTimeout(function(){
-                                        box.animate({ opacity:'1', width:w, height:h }, settings.animSpeed/1.3, '', function(){ slider.trigger('nivo:animFinished'); });
-                                    }, (100 + time));
+                                        box.animate({ opacity:'1', width:w, height:h }, settings.animSpeed/1, '', function(){ slider.trigger('nivo:animFinished'); });
+                                    }, (500 + time));
                                 } else {
                                     setTimeout(function(){
-                                        box.animate({ opacity:'1', width:w, height:h }, settings.animSpeed/1.3);
-                                    }, (100 + time));
+                                        box.animate({ opacity:'1', width:w, height:h }, settings.animSpeed/1);
+                                    }, (500 + time));
                                 }
                             })(rows, prevCol, timeBuff, i, totalBoxes);
                             i++;
@@ -1308,8 +1310,8 @@
         slices: 15,
         boxCols: 8,
         boxRows: 4,
-        animSpeed: 500,
-        pauseTime: 3000,
+        animSpeed: 200,
+        pauseTime: 9000,
         startSlide: 0,
         directionNav: true,
         controlNav: true,

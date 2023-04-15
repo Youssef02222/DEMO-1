@@ -75,19 +75,37 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
-#header {
-    /* z-index: 997; */
-    /* transition: all 0.5s; */
-    padding: 22px 0;
-    background: #03131df6;
-    margin-bottom: auto;
-    /* NAVCOLOR */
-    /* #fff; 
-  0E2E9A
-   background:#05253acc
-  */
+@media only screen and (max-width: 600px) {
+    #header {
+        /* z-index: 997; */
+        /* transition: all 0.5s; */
+        padding: 12px 0;
+        background: #020c13f6;
+        margin-bottom: 0;
+        margin: 0;
+        /* NAVCOLOR */
+        /* #fff; 
+      0E2E9A
+       background:#05253acc
+      */
+    }
 }
+@media only screen and (min-width: 600px) {
+    #header {
+        /* z-index: 997; */
+        /* transition: all 0.5s; */
+        padding: 22px 0;
+        background: #020c13;
+        margin-bottom: 0;
+        margin: 0;
+        /* NAVCOLOR */
+        /* #fff; 
+      0E2E9A
+       background:#05253acc
+      */
+    }
+}
+
 
 #header.header-scrolled {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -369,7 +387,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #home_1{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 #hero {
     width: 100%;

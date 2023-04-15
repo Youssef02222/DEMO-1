@@ -47,33 +47,32 @@
   //Nivo slider
   //---------------------------------------------
   $('#ensign-nivoslider').nivoSlider({
-    effect: 'random',
-    slices: 15,
-    boxCols: 12,
-    boxRows: 8,
-    animSpeed: 500,
-    pauseTime: 5000,
-    startSlide: 0,
-    directionNav: true,
-    controlNavThumbs: false,
-    pauseOnHover: true,
-    manualAdvance: false,
+    // effect: 'random',
+    // slices: 15,
+    // boxCols: 12,
+    // boxRows: 8,
+    // animSpeed: 500,
+    // pauseTime: 5000,
+    // startSlide: 0,
+    // directionNav: true,
+    // controlNavThumbs: false,
+    // pauseOnHover: true,
+    // manualAdvance: false,
   });
 
   /*----------------------------
    Scrollspy js
   ------------------------------ */
   var Body = $('body');
-  Body.scrollspy({
-    target: '.navbar-collapse',
-    offset: 80
-  });
+  // Body.scrollspy({
+  //   target: '.navbar-collapse',
+  //   offset: 80
+  // });
 
   /*---------------------
     Venobox
   --------------------- */
-  var veno_box = $('.venobox');
-  veno_box.venobox();
+
 
   /*----------------------------
   Page Scroll
@@ -106,10 +105,10 @@
   /*----------------------------
    Parallax
   ------------------------------ */
-  var well_lax = $('.wellcome-area');
-  well_lax.parallax("50%", 0.4);
-  var well_text = $('.wellcome-text');
-  well_text.parallax("50%", 0.6);
+  // var well_lax = $('.wellcome-area');
+  // well_lax.parallax("50%", 0.4);
+  // var well_text = $('.wellcome-text');
+  // well_text.parallax("50%", 0.6);
 
   /*--------------------------
    collapse

@@ -1,14 +1,7 @@
-/*
- * jQuery Nivo Slider v3.2
- * http://nivo.dev7studios.com
- *
- * Copyright 2012, Dev7studios
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
+
  
 /* The Nivo Slider styles */
-#container {
+/* #container {
     width:100%;
     height:100%;
     overflow:hidden;
@@ -17,14 +10,14 @@
     left:0px;
 }
 .nivoSlider {
-    /* position:fixed; */
+   
     top:-16px;
     left:0px;
 }
 .nivoSlider img {position:absolute;
     top:0px;
     left:0px;
-    /* height: 100vh; */
+   
     width: 100vw;
 }
 
@@ -33,13 +26,33 @@
     width:100%;
     height:270px;
     overflow: hidden;
-}
-
+} */
+  /* phone */
 @media only screen and (max-width: 600px) {
+    #container {
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        position:fixed;
+        top:0px;
+        left:0px;
+    }
+    .nivoSlider {
+        /* position:fixed; */
+        top:-16px;
+        left:0px;
+    }
+    .nivoSlider img {position:absolute;
+        top:0px;
+        left:0px;
+        height: 100vh;
+        width: 100vw;
+    }
+    
     
     .nivoSlider {
         position:relative;
-        width:100%;
+        width:100vw;
         height:100%;
         overflow: hidden;
     }
@@ -65,8 +78,62 @@
         filter:alpha(opacity=0); 
         opacity:0;
     }
+
+    .slider-direction {
+        position: absolute;
+        left:0; 
+        top:0;  
+        width: 100%;
+        height: 100%;
+        background: none;
+        color: #fff;
+        font-size: 16px;
+        z-index: 999;
+        display: none;
+        margin-bottom: 5px;
+    }
+    
+    /* If an image is wrapped in a link */
+    .nivoSlider a.nivo-imageLink {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        border:0;
+        padding:0;
+        margin:0;
+        z-index:6;
+        display:none;
+        background:white; 
+        filter:alpha(opacity=0); 
+        opacity:0;
+    }
   }
+
+
+  /* web */
   @media only screen and (min-width: 601px) {
+    #container {
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        position:fixed;
+        top:0px;
+        left:0px;
+    }
+    .nivoSlider {
+        /* position:fixed; */
+        top:-16px;
+        left:0px;
+    }
+    .nivoSlider img {position:absolute;
+        top:0px;
+        left:0px;
+        /* height: 100vh; */
+        width: 100vw;
+    }
+    
     
     .nivoSlider {
         position:relative;
@@ -96,7 +163,36 @@
         opacity:0;
     }
        
-
+    .slider-direction {
+        position: absolute;
+        left:0; 
+        top:0;  
+        width: 100%;
+        height: 100%;
+        background: none;
+        color: #fff;
+        font-size: 16px;
+        z-index: 999;
+        display: none;
+        margin-bottom: 5px;
+    }
+    
+    /* If an image is wrapped in a link */
+    .nivoSlider a.nivo-imageLink {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        border:0;
+        padding:0;
+        margin:0;
+        z-index:6;
+        display:none;
+        background:white; 
+        filter:alpha(opacity=0); 
+        opacity:0;
+    }
 
                 /* ------------------------------
         slider animation
@@ -201,7 +297,9 @@
         animation: fadeInRight 1500ms ease-in-out;
         }
   }
-.nivoSlider img {
+
+
+/* .nivoSlider img {
 	position:absolute;
 	top:0px;
 	left:0px;
@@ -211,8 +309,9 @@
 	display: block !important;
 	position: relative !important; 
 	width: 100% !important;
-	height:900px ;
-}
+	height:100% !important;
+    /* HOMEEFFECT 
+} */
 
 /* If an image is wrapped in a link */
 /* .nivoSlider a.nivo-imageLink {
@@ -302,27 +401,27 @@
 /* ------------------------------
 Default Theme
 ---------------------------------*/
-.slider-direction {
+/* .slider-direction {
 	position: absolute;
 	left:0; 
 	top:0;  
 	width: 100%;
-    height: fit-content;
+    height: 100%;
 	background: none;
 	color: #fff;
 	font-size: 16px;
 	z-index: 999;
 	display: none;
     margin-bottom: 5px;
-}
+} */
 
 /* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink {
+/* .nivoSlider a.nivo-imageLink {
     position:absolute;
     top:0px;
     left:0px;
     width:100%;
-    height:800px;
+    height:100%;
     border:0;
     padding:0;
     margin:0;
@@ -331,7 +430,7 @@ Default Theme
     background:white; 
     filter:alpha(opacity=0); 
     opacity:0;
-}
+} */
 /* The slices and boxes in the Slider */
 .nivo-slice {
     display:block;
@@ -361,7 +460,7 @@ Default Theme
     display: block !important;
     position: relative !important; 
     width: 100% !important;
-    height: 900px;
+    height: 100%;
 }
 /* The slices and boxes in the Slider */
 .nivo-slice {
@@ -404,14 +503,14 @@ custom slider
 	animation: myfirst 5000ms ease-in-out; */
 }
 .s-tb{
-	/* display: table;
+	display: table;
 	height: 100%;
 	width: 100%;
-	float: left; */
+	float: left;
 }
 .s-tb-c{
-	/* display: table-cell;
-    vertical-align: middle; */
+	display: table-cell;
+    vertical-align: middle;
 }
 .t-cn{text-align: center}
 .t-lft{text-align: left}
